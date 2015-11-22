@@ -1,19 +1,23 @@
-'use strict'
+'use strict';
 
-var print = function(msg) {
-    console.log(msg)
-};
 
+(function(){
+var light, color;
+
+var i = 0, daytime = 16;
+
+var msInADay = 24*60*60*1000;
 
 var $container = $('#content');
 $container.css({
     'background-color': 'white'
 });
-var color = '';
-var changeBg = function(i, interval, daytime) {
 
+var changeBg = function(i, interval, daytime) {
+    light = Sinner.sinning(daytime);
+    light = light<20 ? 20 : light;
     switch(true){
-        case i<=360: color = `hsl(${i}, 100%, 90%)`; break;
+        case i<=360: color = `hsl(${i}, 100%, ${light}%)`; break;
     }
 
 
@@ -23,9 +27,6 @@ var changeBg = function(i, interval, daytime) {
 };
 
 
-var i = 0, daytime = 0;
-
-var msInADay = 24*60*60*1000;
 
 var iterate = function(fun, interval, end) {
     $container.css({
@@ -42,10 +43,12 @@ var iterate = function(fun, interval, end) {
         setTimeout(rotate, interval)
     };
 
-   // rotate();
+    //rotate();
 
 };
 
 iterate((i,int, day) => {
     changeBg(i, int, day)
 }, 100, 360)
+
+})();

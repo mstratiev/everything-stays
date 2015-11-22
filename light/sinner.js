@@ -1,4 +1,5 @@
 'use strict'
+
 var print = function(msg){
     console.log(msg)
 };
@@ -18,13 +19,14 @@ var Sinner = (function() {
         angleToRad = angToRad(inputToGrad);
         sin = Math.sin(angleToRad);
         exit = sin > 0 ? sin : 0;
-        return(input + ' ' + exit * 100)
+        return(exit * 100)
     };
     return {
         sinning: sinning
     }
 })();
 
+/*
 var s = Sinner;
 s.sinning(0.1)
 s.sinning(1)
@@ -37,3 +39,4 @@ s.sinning(18)
 s.sinning(21)
 s.sinning(23)
 s.sinning(24)
+*/
