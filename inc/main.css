@@ -30,7 +30,7 @@ html body {
 html body #container {
   display: inline-block;
   width: 35rem;
-  padding-top: 10rem;
+  padding-top: 7rem;
   text-align: center;
 }
 html body #container .description {
@@ -46,15 +46,15 @@ html body #container .description:first-letter {
 html body #container #menu {
   display: inline-block;
   position: relative;
-  width: 20rem;
+  width: 30rem;
   height: 20rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 html body #container #menu li {
   float: left;
   width: 10rem;
   height: 10rem;
-  background-color: #d3d3d3;
+  background-color: #ddd;
   line-height: 10rem;
   text-align: center;
   transition: background-color 500ms;
@@ -68,4 +68,10 @@ html body #container #menu li a {
 }
 html body #container #menu li:hover {
   background-color: #eee;
+}
+html body #container #menu li span {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: -8rem;
+  opacity: 0.6;
 }
