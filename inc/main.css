@@ -59,7 +59,7 @@ html body #container #menu li {
   text-align: center;
   transition: background-color 500ms;
   font-size: 1.2rem;
-  font-family: Century Gothic;
+  font-family: Century Gothic, sans-serif;
 }
 html body #container #menu li a {
   display: inline-block;
