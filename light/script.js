@@ -14,21 +14,12 @@ $container.css({
 });
 
 var changeBg = function(i, interval, light) {
-    switch(true){
-        case i<=360: color = `hsl(${i}, 100%, ${light}%)`; break;
-    }
-
+    color = `hsl(${i}, 100%, ${light}%)`;
 
     $container.css({
         'background-color': color
     })
 };
-
-Dejector.deject(10, function(num){
-    daytime = num;
-    light = Sinner.sinning(daytime);
-    light = light<20 ? 20 : light;
-})
 
 var iterate = function(fun, interval, end) {
     $container.css({
@@ -47,6 +38,13 @@ var iterate = function(fun, interval, end) {
     rotate();
 
 };
+
+
+Dejector.deject(10, function(num){
+    daytime = num;
+    light = Sinner.sinning(daytime);
+    light = light<20 ? 20 : light;
+});
 
 
 
