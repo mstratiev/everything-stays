@@ -40,9 +40,6 @@ html body #container .description {
   font-size: 1.2rem;
   font-family: Calisto MT, Book Antiqua, serif;
 }
-html body #container .description:first-letter {
-  margin-left: 1rem;
-}
 html body #container #menu {
   display: inline-block;
   position: relative;
