@@ -7,7 +7,7 @@ http://mstratiev.github.io/everything-stays
 
 	WIP
 
-###light
+##.light
 	.light is an artwork from the object "everything-stays":
 	the lightness of the color changes during the day
 	and it is higher at 12:00, and during the night form 6 till 18
@@ -23,4 +23,5 @@ http://mstratiev.github.io/everything-stays
 	to a previous state.
 
 
-##globals
+##.globals
+##.words
