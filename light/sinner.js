@@ -28,15 +28,15 @@ var Sinner = (function() {
 
 /*
 var s = Sinner;
-s.sinning(0.1)
-s.sinning(1)
-s.sinning(3)
-s.sinning(6)
+s.sinning(0.1) => 0
+s.sinning(1) => 0
+s.sinning(3) => 0
+s.sinning(6) => 0
 s.sinning(9)
-s.sinning(12)
+s.sinning(12) => ~99.99
 s.sinning(15)
 s.sinning(18)
-s.sinning(21)
-s.sinning(23)
-s.sinning(24)
+s.sinning(21) => 0
+s.sinning(23) => 0
+s.sinning(24) => 0
 */
