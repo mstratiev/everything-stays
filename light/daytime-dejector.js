@@ -2,10 +2,10 @@
 
 
 var Dejector = (function() {
-    var date, hours, minutes;
+    var date, hours, minutes, whatIActuallNeed;
     var self = this;
-    var minutes = function(min) {
-        return min * 60 * 100
+    var minutize = function(min) {
+        return min * 60 * 1000
     }
 
     var dating = function() {
@@ -16,13 +16,14 @@ var Dejector = (function() {
 
     }
 
-    var deject = function(interval) {
-  
+    var deject = function(interval, callback) {
+
         var rotate = function() {
-
-
-            setTimeout(rotate, minutes(interval))
+    		whatIActuallNeed = dating();
+            setTimeout(rotate, minutize(interval));
+            callback(whatIActuallNeed)
         }
+        rotate();
 
     }
 
@@ -34,4 +35,3 @@ var Dejector = (function() {
     }
 })();
 
-console.log(Dejector.dating())

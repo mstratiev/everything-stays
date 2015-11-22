@@ -19,7 +19,7 @@ var Sinner = (function() {
         angleToRad = angToRad(inputToGrad);
         sin = Math.sin(angleToRad);
         exit = sin > 0 ? sin : 0;
-        return(exit * 100)
+        return(exit * 99.99)
     };
     return {
         sinning: sinning
