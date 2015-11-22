@@ -21,14 +21,14 @@ body #content {
 body #info {
   position: absolute;
   top: 0;
-  right: -13rem;
+  right: -18rem;
   background-color: rgba(0,0,0,0.1);
-  width: 15rem;
+  width: 20rem;
   height: 100%;
   transition: right 300ms, background-color 300ms;
   padding: 2rem;
   box-sizing: border-box;
-  font-family: Calibri;
+  font-family: Calisto MT, serif;
 }
 body #info .description {
   width: 100%;
@@ -36,9 +36,6 @@ body #info .description {
   color: #fff;
   font-size: 1.2rem;
   overflow: auto;
-}
-body #info .description:first-letter {
-  padding-left: 1rem;
 }
 body #info:hover {
   background-color: rgba(0,0,0,0.5);
