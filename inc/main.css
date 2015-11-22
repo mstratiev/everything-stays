@@ -28,15 +28,27 @@ html body {
   text-align: center;
 }
 html body #container {
+  display: inline-block;
+  width: 35rem;
   padding-top: 10rem;
   text-align: center;
-  width: inherit;
+}
+html body #container .description {
+  display: inline-block;
+  width: 33rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: Calisto MT, Book Antiqua, serif;
+}
+html body #container .description:first-letter {
+  margin-left: 1rem;
 }
 html body #container #menu {
   display: inline-block;
   position: relative;
   width: 20rem;
   height: 20rem;
+  margin-top: 2rem;
 }
 html body #container #menu li {
   float: left;
