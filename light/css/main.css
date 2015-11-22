@@ -1,0 +1,51 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+body #content {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+body #info {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgba(255,255,255,0.4);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: background-color 500ms;
+}
+body #info .description {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  opacity: 0;
+  width: 15rem;
+  height: 20rem;
+  background-color: rgba(255,255,255,0.8);
+  transition: opacity 500ms;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+body #info .description:first-letter {
+  padding-left: 1rem;
+}
+body #info:hover {
+  background-color: #fff;
+}
+body #info:hover .description {
+  opacity: 1;
+}
