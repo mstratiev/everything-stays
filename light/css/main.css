@@ -22,10 +22,10 @@ body #info {
   position: absolute;
   top: 0;
   right: -13rem;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.6);
   width: 15rem;
   height: 100%;
-  transition: right 300ms, background-color 300ms;
+  transition: right 300ms;
   padding: 2rem;
   box-sizing: border-box;
   font-family: Calibri;
@@ -34,6 +34,7 @@ body #info .description {
   width: 100%;
   height: 100%;
   color: #fff;
+  transition: opacity 500ms;
   font-size: 1.2rem;
   overflow: auto;
 }
@@ -41,6 +42,5 @@ body #info .description:first-letter {
   padding-left: 1rem;
 }
 body #info:hover {
-  background-color: rgba(0,0,0,0.5);
   right: 0;
 }
