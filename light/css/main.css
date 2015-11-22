@@ -26,8 +26,9 @@ body #info {
   width: 15rem;
   height: 100%;
   transition: right 300ms;
-  padding: 3rem;
+  padding: 1.5rem;
   box-sizing: border-box;
+  font-family: Calibri;
 }
 body #info .description {
   width: 100%;
