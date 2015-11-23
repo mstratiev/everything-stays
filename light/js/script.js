@@ -4,7 +4,7 @@
 (function(){
 var light, color;
 
-var i = 0, daytime = 0;
+var i = radnom(0, 360), daytime = 0;
 
 var msInADay = 24*60*60*1000;
 
