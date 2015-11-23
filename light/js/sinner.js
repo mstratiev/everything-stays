@@ -3,7 +3,9 @@
 var print = function(msg){
     console.log(msg)
 };
-
+var radnom = function (min, max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
 var Sinner = (function() {
     var pi, angToRad, inputToGrad, angleToRad, sin, exit, sinning;
 
@@ -25,18 +27,3 @@ var Sinner = (function() {
         sinning: sinning
     }
 })();
-
-/*
-var s = Sinner;
-s.sinning(0.1) => 0
-s.sinning(1) => 0
-s.sinning(3) => 0
-s.sinning(6) => 0
-s.sinning(9)
-s.sinning(12) => ~99.99
-s.sinning(15)
-s.sinning(18)
-s.sinning(21) => 0
-s.sinning(23) => 0
-s.sinning(24) => 0
-*/

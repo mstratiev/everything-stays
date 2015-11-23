@@ -1,6 +1,5 @@
 'use strict';
 
-
 var Dejector = (function() {
     var date, hours, minutes, whatIActuallNeed;
     var self = this;
@@ -13,7 +12,6 @@ var Dejector = (function() {
         hours = date.getHours();
         minutes = date.getMinutes();
         return hours + (minutes / 60)
-
     }
 
     var deject = function(interval, callback) {
@@ -24,10 +22,7 @@ var Dejector = (function() {
             callback(whatIActuallNeed)
         }
         rotate();
-
     }
-
-
 
     return {
         deject: deject,
