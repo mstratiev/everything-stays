@@ -54,7 +54,7 @@
 
 
 
-    iterate((i, int, light) => {
+    iterate(function(i, int, light) {
         changeBg(i, int, light)
     }, 1000, 360)
 
