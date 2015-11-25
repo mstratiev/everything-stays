@@ -25,6 +25,7 @@ body #info {
   background-color: rgba(0,0,0,0.1);
   width: 20rem;
   height: 100%;
+  -webkit-transition: right 300ms, background-color 300ms;
   transition: right 300ms, background-color 300ms;
   padding: 2rem;
   box-sizing: border-box;
